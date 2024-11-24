@@ -112,8 +112,8 @@ async function getData(cityName) {
 }
 function displayData(data) {
     let dt = new Date(data.dt *1000).toDateString();
-    date.style.display = "block";
-    date.textContent = dt;
+    // date.style.display = "block";
+    // date.textContent = dt;
     const city = document.querySelector(".c-names");
     city.innerText = `${data.name},${data.sys.country}`;
     const icon = document.getElementById("icon-img");
