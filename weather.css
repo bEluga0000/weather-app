@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cantarell', sans-serif;
+}
+
+.nav-bar {
+    background-color: black;
+    /*  */
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    /* todo box shadow need to be given */
+}
+
+.app-name {
+    font-family: unset !important;
+    padding-left: 2rem;
+    font-size: 30px;
+    font-weight: 900;
+    color: wheat;
+}
+
+.orange {
+    color: #F49D1A;
+}
+
+/* ?Main search  Contents */
+.weather-contents {
+    height: 85vh;
+    background-color: lightskyblue;
+    padding: 1rem;
+    /* ! giving relative because of giving positions to the less and more button */
+    position: relative;
+}
+
+.input-btns {
+    justify-content: space-between;
+}
+
+.search-contents {
+    width: 30%;
+}
+
+.s-btn {
+    font-weight: 800;
+    font-size: 20px;
+    background-color: #393646;
+}
+
+.s-btn:hover {
+    background-color: #17594A;
+}
+
+#live-location {
+    font-family: unset;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#live-location:hover {
+    color: #17594A;
+}
+
+/* ? Main contents */
+.main-contents {
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.c-names {
+    font-weight: 600;
+}
+
+.date {
+    display: none;
+}
+
+.two-divs {
+    display: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.weather-updates {
+    display: none;
+    /* max-width: 30%; */
+    margin: 1rem auto;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgba(248, 249, 250, 0.7);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(248, 249, 250, 0.411);
+    border-radius: 12px;
+    padding: 1rem 3rem;
+    gap: .2rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.weather-updates:hover {
+    transform: scale(1.1);
+}
+
+.weather-updates .icon {
+    min-height: 30%;
+    text-align: center;
+}
+
+.icon-img {
+    border: 1px solid black;
+    width: 100%;
+}
+
+/* ? five date update */
+.weather-five-update {
+    display: none;
+    flex-direction: column;
+    margin: 1rem auto;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgba(248, 249, 250, 0.7);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(248, 249, 250, 0.411);
+    border-radius: 12px;
+    padding: 1rem 3rem;
+    gap: .2rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.weather-five-update:hover {
+    transform: scale(1.1);
+}
+
+.five-div {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.five-img-d{
+    /* height: 100px; */
+    width: 100px;
+}
+.five-p {
+    font-size: 1.2rem;
+}
+
+/* ? More details  */
+.weather-detail-update {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    display: none;
+}
+/* .weather-detail-update>div>h3{
+    text-align: center;
+} */
+.weather-detail-update>div {
+    width: 20%;
+    text-align: center;
+    background-color: rgba(248, 249, 250, 0.7);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(248, 249, 250, 0.411);
+    border-radius: 12px;
+    padding: 1rem;
+    gap: .2rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.weather-detail-update>div:hover {
+    transform: scale(1.05);
+}
+
+.weather-detail-update>div>h3 {
+    text-align: center;
+    font-weight: 700;
+    color: #17594A;
+}
+
+.weather-details {
+    justify-content: center !important;
+    align-items: center;
+}
+
+.weather-detail-update {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    display: none;
+}
+
+.info {
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.info>p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* five day detail  */
+.five-detail-update {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    display: none;
+}
+
+.five-detail-update>div {
+    width: 20%;
+    text-align: left;
+    background-color: rgba(248, 249, 250, 0.7);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(248, 249, 250, 0.411);
+    border-radius: 12px;
+    padding: 1rem;
+    gap: .2rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* ? More or less buttons */
+.more-less-btns {
+    display: none;
+}
+
+
+.more-less-btns>button {
+    font-family: unset;
+    font-weight: 800;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.more-less-btns>button:hover {
+    background-color: #17594A;
+    color: yellowgreen;
+}
+
+.less-btn {
+    display: none;
+}
+
+/* ? footer  */
+.footer {
+    background-color: black;
+    height: 5vh;
+    color: whitesmoke;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer p a {
+    color: greenyellow;
+}
+
+.footer p a:hover {
+    color: #16FF00;
+}

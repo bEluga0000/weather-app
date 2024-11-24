@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- BootStrap Icon Link -->
+     <link rel="icon" href="/cloudy.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- Style Sheet  -->
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h2 class="app-name">
+        <i class="bi bi-brightness-low-fill"></i>&nbsp<span class="white"
+          >Weather</span
+        >
+        <span class="orange">App</span>
+      </h2>
+    </nav>
+    <!-- ? Main Contents -->
+    <div class="container-fluid weather-contents d-flex flex-column">
+      <div class="input-btns d-flex">
+        <div class="input-group search-contents">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter City Name"
+            aria-label="City Name"
+            aria-describedby="button-addon2"
+            id="search"
+          />
+          <button class="btn btn-dark s-btn" type="button" id="button-addon2">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <div class="live-contents">
+          <button class="btn btn-light" id="live-location">
+            live location <i class="bi bi-geo-alt-fill"></i>
+          </button>
+        </div>
+      </div>
+      <div class="main-contents d-flex flex-column">
+        <h1 class="c-names">Get Weather Updates</h1>
+        <!-- need to take care of this -->
+        <!-- <h3 class="date">Today</h3> -->
+        <div class="two-divs">
+          <div class="weather-updates flex-column">
+            <h3 class="">Today</h3>
+            <div class="icon">
+              <img src="" alt="" id="icon-img" />
+            </div>
+            <div class="temperature">
+              <p class="temp">°C</p>
+            </div>
+            <div class="condition">
+              <p class="weather-condition">condition</p>
+            </div>
+          </div>
+          <div class="weather-five-update">
+            <h3 class="">5 Days</h3>
+            <div id="five-0" class="five-div">
+              <p id="date-0" class="five-p">2024-11-24</p>
+              <img
+                src="http://openweathermap.org/img/w/04d.png"
+                alt=""
+                id="five-img-0"
+                class="five-img"
+              />
+            </div>
+            <div id="five-1" class="five-div">
+              <div>
+                <p id="date-1" class="five-p">2024-11-24</p>
+              </div>
+              <div>
+                <img
+                  src="http://openweathermap.org/img/w/04d.png"
+                  alt=""
+                  id="five-img-1"
+                  class="five-img"
+                />
+              </div>
+            </div>
+            <div id="five-2" class="five-div">
+              <div>
+                <p id="date-2" class="five-p">2024-11-24</p>
+              </div>
+              <div>
+                <img
+                  src="http://openweathermap.org/img/w/04d.png"
+                  alt=""
+                  id="five-img-2"
+                  class="five-img"
+                />
+              </div>
+            </div>
+            <div id="five-3" class="five-div">
+              <div>
+                <p id="date-3" class="five-p">2024-11-24</p>
+              </div>
+              <div>
+                <img
+                  src="http://openweathermap.org/img/w/04d.png"
+                  alt=""
+                  id="five-img-3"
+                  class="five-img"
+                />
+              </div>
+            </div>
+            <div id="five-4" class="five-div">
+              <div>
+                <p id="date-4" class="five-p">2024-11-24</p>
+              </div>
+              <div>
+                <img
+                  src="http://openweathermap.org/img/w/04d.png"
+                  alt=""
+                  id="five-img-4"
+                  class="five-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-detail-update">
+          <div class="temp-details d-flex flex-column">
+            <h3>Temperature</h3>
+            <div class="info d-flex flex-column">
+              <p class="d-temp">temp: °C</p>
+              <p class="feels-temp">Feels Like: °C</p>
+              <p class="temp-range">range: °C</p>
+              <p class="humidity">Humidity: --</p>
+            </div>
+          </div>
+          <div class="sun-time-details d-flex flex-column">
+            <h3>Timings</h3>
+            <div class="info d-flex flex-column">
+              <p class="sunrise">sunrise:6:35</p>
+              <p class="sunset">sunset:6:45</p>
+            </div>
+          </div>
+          <div class="weather-details d-flex flex-column">
+            <h3>Weather</h3>
+            <div class="info d-flex flex-column">
+              <img src="" alt="" id="d-icon-img" />
+              <p class="w-description">Cloudy</p>
+            </div>
+          </div>
+          <div class="other-details d-flex flex-column">
+            <h3>Other Details</h3>
+            <div class="info d-flex flex-column">
+              <p class="wind">wind speed : --</p>
+              <p class="visibility-info">Less</p>
+              <p class="pressure-info">1012 bar</p>
+            </div>
+          </div>
+          <div class="location-details d-flex flex-column">
+            <h3>Located At</h3>
+            <div class="info d-flex flex-column">
+              <p class="lon-info">longitude:10009856</p>
+              <p class="lan-info">latitude:12345678890</p>
+            </div>
+          </div>
+        </div>
+        <div class="five-detail-update">
+          <div class="d-flex flex-column" id="five-detail-0">
+            <h3 id="five-dt-0"></h3>
+            <div class="info d-flex flex-column">
+              <img src="http://openweathermap.org/img/w/04d.png" alt="" id="fd-img-0" class="five-img-d"/>
+              <p class="fd-temp-0">temp: °C</p>
+              <p class="fd-feels-0">Feels Like: °C</p>
+              <p class="fd-humidity-0">range: °C</p>
+              <p class="fd-visibility-0">Humidity: --</p>
+            </div>
+          </div>
+          <div class="d-flex flex-column" id="five-detail-1">
+            <h3 id="five-dt-1"></h3>
+            <div class="info d-flex flex-column">
+              <img src="" alt="" id="fd-img-1" class="five-img-d"/>
+              <p class="fd-temp-1">temp: °C</p>
+              <p class="fd-feels-1">Feels Like: °C</p>
+              <p class="fd-humidity-1">range: °C</p>
+              <p class="fd-visibility-1">Humidity: --</p>
+            </div>
+          </div>
+          <div class="d-flex flex-column" id="five-detail-2">
+            <h3 id="five-dt-2"></h3>
+            <div class="info d-flex flex-column" >
+              <img src="" alt="" id="fd-img-2" class="five-img-d"/>
+              <p class="fd-temp-2">temp: °C</p>
+              <p class="fd-feels-2">Feels Like: °C</p>
+              <p class="fd-humidity-2">range: °C</p>
+              <p class="fd-visibility-2">Humidity: --</p>
+            </div>
+          </div>
+          <div class="d-flex flex-column" id="five-detail-3">
+            <h3 id="five-dt-3"></h3>
+            <div class="info d-flex flex-column">
+              <img src="" alt="" id="fd-img-3" class="five-img-d"/>
+              <p class="fd-temp-3">temp: °C</p>
+              <p class="fd-feels-3">Feels Like: °C</p>
+              <p class="fd-humidity-3">range: °C</p>
+              <p class="fd-visibility-3">Humidity: --</p>
+            </div>
+          </div>
+          <div class="d-flex flex-column" id="five-detail-4">
+            <h3 id="five-dt-4"></h3>
+            <div class="info d-flex flex-column">
+              <img src="" alt="" id="fd-img-4" class="five-img-d"/>
+              <p class="fd-temp-4">temp: °C</p>
+              <p class="fd-feels-4">Feels Like: °C</p>
+              <p class="fd-humidity-4">range: °C</p>
+              <p class="fd-visibility-4">Humidity: --</p>
+            </div>
+          </div>
+        </div>
+        <div class="more-less-btns">
+          <button class="more-btn btn btn-success">Show Less</button>
+          <button class="less-btn btn btn-success">Show Less</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer d-flex">
+      <p>&#169; 2023-07-23</p>
+      <p>
+        Shown Data Is based on
+        <a href="https://openweathermap.org/api" target="_blank"
+          >Open Weather Api</a
+        >
+      </p>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
