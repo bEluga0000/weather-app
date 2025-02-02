@@ -206,6 +206,7 @@ weatherUpDiv.addEventListener("click", () => {
     document.querySelector(".weather-detail-update").style.display = "flex";
 });
 lessDetail.addEventListener("click", () => {
+    console.log("getting clicked")
     lessDetail.style.display = "none";
     moreLessBtns.style.display = "none";
     // detailedBtn.style.display = "block";
